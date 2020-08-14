@@ -118,7 +118,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['edit'])) {
             // If Email is needed to change check if the new mail exists on the database if so show an error
             if (!empty($emailEdit)) {
                 $SQL_CHECK_NEW_EMAIL_EXISTS = "SELECT email FROM USERS WHERE email='$emailEdit'";
-                if (($conn->query($SQL_CHECK_NEW_EMAIL_EXISTS))->num_rows > 0) {
+                if ($conn->query($SQL_CHECK_NEW_EMAIL_EXISTS)->num_rows > 0) {
                     $error = "Error! Email already exists.";
                     $success = false;
                 } else {
