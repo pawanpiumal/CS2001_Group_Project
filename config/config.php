@@ -1,8 +1,15 @@
 <?php
-	$servername = "localhost";
-	$DBusername = "root";
-	$DBpassword = "";
+	// $servername = "localhost";
+	// $DBusername = "root";
+	// $DBpassword = "";
+	// $dbName = "Fashion_Club";
+
+
+$servername = "fashionclubsql.mysql.database.azure.com";
+	$DBusername = "gppa@fashionclubsql";
+	$DBpassword = "gpagroup@123";
 	$dbName = "Fashion_Club";
+
 
 	$conn = new mysqli($servername, $DBusername, $DBpassword);
 	if ($conn->connect_error) {
