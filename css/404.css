@@ -1,0 +1,17 @@
+.body-404 .banner .banner-text button{
+    background-color: #00b66d;
+    border: none;
+    padding: 13px;
+    color: white;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.body-404 .banner .banner-text button:hover{
+    cursor: pointer;
+    background-color: #007445;
+    transition: 0.5s all;
+}
+.body-404 .banner .banner-text button:focus{
+    outline: none;
+}

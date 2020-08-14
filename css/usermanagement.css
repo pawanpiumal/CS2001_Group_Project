@@ -1,0 +1,96 @@
+.user-management-heading {
+  margin: 60px;
+  box-shadow: 0 0 10px 10px #cccccc;
+  background-image: url(../images/home/bb26.jpg);
+  background-size: cover;
+  background-position: right 0;
+}
+.user-management-heading h1 {
+  padding: 30px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  user-select: none;
+}
+
+.user-management-body {
+  margin: 60px;
+}
+
+.user-management-body .user-table {
+  box-shadow: 0 0 10px 10px #cccccc;
+  padding: 30px;
+}
+.user-management-body .user-table table,
+.user-management-body .user-table table th,
+.user-management-body .user-table table td {
+  border: solid 2px white;
+}
+
+.user-management-body .user-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.user-management-body .user-table table tbody tr td:first-of-type,
+.user-management-body .user-table table tbody tr td .action-btn-row {
+  text-align: center;
+}
+
+.user-management-body .user-table table th {
+  background-color: #14bc79;
+  height: 3em;
+}
+.user-management-body .user-table table td {
+  background-color: #f5f5f5;
+  height: 3em;
+}
+.user-management-body .user-table table tbody tr {
+  margin: 10px;
+}
+.user-management-body .user-table table .action-btn-row{
+  display: flex;
+  justify-content: center;
+}
+.user-management-body .user-table table .action-btn-row form{
+  margin: 0;
+}
+.user-management-body .user-table table tbody tr td .action-btn-row input,
+.user-management-body .user-table table tbody tr td .action-btn-row button {
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+}
+.user-management-body .user-table table tbody tr td .action-btn-row form:last-of-type{
+  margin-left: 10px;
+}
+
+
+.user-management-body .user-table table .action-btn-row button.edit {
+  user-select: none;
+  background-color: #14bc79;
+  color: white;
+}
+.user-management-body .user-table table .action-btn-row button.delete {
+  user-select: none;
+  background-color: #dc3545;
+  color: white;
+}
+
+.user-management-body .user-table table .action-btn-row button.edit:hover {
+  background-color: #007445;
+  box-shadow: 0 0 10px 4px #cccccc;
+  cursor: pointer;
+}
+.user-management-body .user-table table .action-btn-row button.delete:hover {
+  background-color: #e01a2d;
+  box-shadow: 0 0 10px 4px #cccccc;
+  cursor: pointer;
+}
+
+.overlay .alert p.error{
+  color: red;
+  font-size: 15px;
+  margin: 5px;
+  text-align: center;
+}

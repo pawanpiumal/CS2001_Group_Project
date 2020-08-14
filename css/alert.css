@@ -1,0 +1,131 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  place-items: center;
+  user-select: none;
+  z-index: 99;
+}
+
+.visibility {
+  transition: 0.5s all;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.alert {
+  background-color: #f5f5f5;
+  width: 400px;
+  z-index: 100;
+  padding: 20px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px 2px rgb(0, 229, 139.75);
+}
+
+.alert-danger {
+  box-shadow: 0 0 10px 2px #dc3545;
+}
+
+.alert .alert-title {
+  margin: 0 0 5px 0;
+  text-align: center;
+  color: #14bc79;
+  font-weight: 200;
+  font-size: 40px;
+}
+
+.alert .alert-body {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.alert .btn-row {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.alert .btn-row .btn-close,
+.alert .btn-row .btn-save {
+  margin: 0 5px 0 5px;
+  border: none;
+  padding: 10px;
+  font-size: 0.9em;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+.alert .btn-row .btn-close {
+  background-color: #cccccc;
+  color: black;
+}
+
+.alert .btn-row .btn-close:hover {
+  background-color: #aaaaaa;
+  box-shadow: 0 0 10px 0 #999999;
+  cursor: pointer;
+}
+
+.alert .btn-row .btn-save {
+  background-color: #14bc79;
+  color: white;
+}
+
+.alert .btn-row .btn-save:hover {
+  background-color: #007445;
+  box-shadow: 0 0 10px 0 #999999;
+  cursor: pointer;
+}
+
+.alert-danger .alert-title {
+  color: #dc3545;
+}
+
+.alert-danger .btn-save {
+  background-color: #dc3545 !important;
+  color: white;
+}
+
+.alert-danger .btn-save:hover {
+  background-color: #e01a2d !important;
+  box-shadow: 0 0 10px 0 #999999;
+  cursor: pointer;
+}
+
+.alert .alert-body-inputs {
+  display: grid;
+  column-width: auto;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.alert .alert-body-inputs input {
+  display: block;
+  width: 100%;
+  height: 3em;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+  font-size: 15px;
+}
+
+.alert .alert-body-list{
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.alert .alert-body-list p{
+  margin:10px;
+}
+
+.alert form {
+  margin: 0;
+}
+
+body.model-open {
+  overflow: hidden;
+}

@@ -1,0 +1,114 @@
+.contact-heading {
+  margin: 60px;
+  box-shadow: 0 0 10px 10px #cccccc;
+  background-image: url(../images/home/bb42.jpg);
+  background-size: cover;
+  background-position: right center;
+}
+
+.contact-heading h1 {
+  padding: 30px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  user-select: none;
+}
+
+.contact-body {
+  margin: 60px;
+}
+
+.contact-body .contact-table {
+  box-shadow: 0 0 10px 10px #cccccc;
+  padding: 30px;
+}
+
+.contact-body .contact-table table,
+.contact-body .contact-table table th,
+.contact-body .contact-table table td {
+  border: solid 2px white;
+}
+
+.contact-body .contact-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.contact-body .contact-table table tbody tr td:first-of-type,
+.contact-body .contact-table table tbody tr td .action-btn-row {
+  text-align: center;
+}
+
+.contact-body .contact-table table th {
+  background-color: #14bc79;
+  height: 3em;
+}
+
+.contact-body .contact-table table td {
+  background-color: #f5f5f5;
+  height: 3em;
+  text-align: center;
+}
+
+.contact-body .contact-table table tbody tr {
+  margin: 10px;
+}
+
+.contact-body .contact-table table .action-btn-row {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-body .contact-table table td a{
+    text-decoration: none;
+    color: black;
+}
+
+.contact-body .contact-table table .action-btn-row form {
+  margin: 0;
+}
+
+.contact-body .contact-table table tbody tr td .action-btn-row button {
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+.contact-body .contact-table table .action-btn-row button.delete {
+  user-select: none;
+  background-color: #dc3545;
+  color: white;
+}
+
+
+.contact-body .contact-table table .action-btn-row button.delete:hover {
+  background-color: #e01a2d;
+  box-shadow: 0 0 10px 4px #cccccc;
+  cursor: pointer;
+}
+
+.contact-body .tooltip {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.contact-body .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 500px;
+  background-color: #007445;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  left: 50%;
+  margin-left: -260px;
+}
+
+.contact-body .tooltip:hover .tooltiptext {
+  visibility: visible;
+}

@@ -1,0 +1,102 @@
+.contact-us-heading {
+  margin: 60px;
+  box-shadow: 0 0 10px 10px #cccccc;
+  background-image: url(../images/home/bb39.jpg);
+  background-size: cover;
+  background-position: right center;
+}
+
+.contact-us-heading h1 {
+  padding: 30px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  user-select: none;
+}
+
+.contact-us-body {
+  margin: 60px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 60px;
+}
+
+.contact-us-body .details-body,
+.contact-us-body .contact-us-form-body {
+  box-shadow: 0 0 10px 10px #cccccc;
+  padding: 30px;
+  /* height: fit-content; */
+}
+
+.details-body{
+  background-image: url(../images/home/bb50.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:white !important;
+}
+
+.contact-us-body .contact-us-form-body .contact-us-form .contact-us-input {
+  display: block;
+  width: 100%;
+  height: 3em;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+  font-size: 15px;
+}
+.contact-us-body .contact-us-form .contact-us-input:focus {
+  outline-color: #00b66d;
+}
+
+.contact-us-body .contact-us-form-body .contact-us-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  margin: 0;
+}
+
+.contact-us-body .contact-us-form-body .contact-us-form textarea,
+.contact-us-body .contact-us-form-body .contact-us-form button {
+  grid-column: 1 / span 2;
+}
+
+.contact-us-body .contact-us-form-body .contact-us-form textarea {
+  resize: none;
+  height: 150px !important;
+}
+
+.contact-us-body .contact-us-form-body button.contact-us-form-submit {
+  background-color: #00b66d;
+  border: none;
+  padding: 13px;
+  width: 100%;
+  color: white;
+  font-size: 15px;
+}
+
+.contact-us-body .contact-us-form-body button.contact-us-form-submit:hover {
+  cursor: pointer;
+  background-color: #007445;
+  transition: 0.5s all;
+}
+
+.contact-us-body .details-body p {
+  margin-left: 10px;
+  /* color: #444444; */
+}
+
+.contact-us-body .details-body p a {
+  text-decoration: none;
+  /* color: #444444; */
+  color: white;
+}
+
+.contact-us-body .details-body h3 {
+  margin: 0;
+}
+p.error {
+  color: red;
+  font-size: 15px;
+  margin: 5px;
+}

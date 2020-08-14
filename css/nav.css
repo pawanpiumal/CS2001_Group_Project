@@ -1,0 +1,277 @@
+/* LOGO FONT */
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("Source\ Sans\ Pro.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+/* ----------------------------------Header CSS-------------------------------------------- */
+header.header .logo,
+header.header {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+header.header .logo img {
+  margin-left: 60px;
+}
+
+header.header .logo h1 {
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-family: "Source Sans Pro", sans-serif;
+  user-select: none;
+}
+
+.img-text {
+  background-image: url(../images/logo8.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: fit-content;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+header.header .logo h1 span {
+  color: rgb(20, 188, 121);
+}
+
+header.header .actions button,
+header.header .actions input {
+  float: right;
+  height: 40;
+}
+header.header .actions input {
+  margin-right: 5px;
+  width: 20em;
+  border: 1px solid #cccccc;
+  color: rgb(100, 100, 100);
+  padding: 0 10px 0 10px;
+}
+header.header .actions button {
+  border: none;
+  box-shadow: none;
+  background-color: #00b66d;
+  background-image: url(../images/search.png);
+  transition: 0.5s all;
+}
+
+header.header .actions .search button img {
+  filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(241deg) brightness(106%)
+    contrast(100%);
+}
+header.header .actions button:hover {
+  background-color: #007445;
+}
+
+header.header .actions .search {
+  margin-right: 60px;
+}
+
+.header > .logo {
+  width: 50%;
+}
+.header .actions {
+  width: 50%;
+}
+
+header.header .logo img:hover,
+header.header .logo h1:hover {
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* --------------------------------- Nav Bar CSS -------------------------------------- */
+nav {
+  width: 100%;
+  background-color: #f5f5f5;
+  box-shadow: 0 10px 10px -5px #cccccc;
+}
+nav .sign-nav {
+  float: right;
+  display: inline-flex;
+  align-items: center;
+  color: rgb(39, 39, 39);
+  list-style-type: none;
+  user-select: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: auto;
+}
+
+nav .sign-nav:last-child {
+  margin-right: 60px;
+}
+
+nav .main-nav:first-child {
+  margin-left: 20px;
+}
+
+nav .main-nav {
+  display: inline-flex;
+  align-items: center;
+  color: black;
+  list-style-type: none;
+  user-select: none;
+  margin-top: 0;
+}
+
+.main-nav li > a,
+.sign-nav li > a {
+  display: block;
+  padding: 16px;
+  min-width: 5em;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.user-profile-btn {
+  display: flex !important;
+  align-items: center;
+  padding: 0 16px 0 16px !important;
+}
+.user-profile-btn div.img {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+nav ul.profile-btn a h3 {
+  margin-left: 10px;
+}
+
+nav .main-nav li:active > a,
+nav .main-nav li.active > a,
+nav .sign-nav li:active > a,
+nav .sign-nav li.active > a {
+  background-color: #00b66d;
+  color: white;
+}
+
+nav .main-nav li:hover > a,
+nav .sign-nav li:hover > a {
+  background-color: #007445;
+  color: white;
+  transition: 0.5s all;
+}
+
+.dropdown-content {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  min-width: 160px;
+}
+
+.dropdown-content a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 16px;
+  text-align: left;
+}
+
+.dropdown-content a:hover,
+.dropdown-content a:active {
+  background-color: #cccccc;
+  color: black;
+}
+
+li.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+li.dropdown span {
+  color: #b1b1b1;
+  font-size: 0.79em;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* -------------------------------------------------Footer------------------------------ */
+footer {
+  background-color: #f5f5f5;
+  box-shadow: 0 -10px 10px -5px #cccccc;
+  display: grid;
+  grid-template-columns: 40px 1fr 30px 1fr 1fr 1fr 40px;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    ". logo . information store  account ."
+    "footer footer footer footer footer footer footer";
+  user-select: none;
+}
+
+footer .item-links h2 {
+  margin-bottom: 0;
+}
+
+footer .logo h1 {
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 40px;
+  letter-spacing: 1px;
+  font-family: "Source Sans Pro", sans-serif;
+  user-select: none;
+}
+
+footer > .logo {
+  margin-top: 40px;
+  grid-area: logo;
+  text-align: center;
+}
+footer > #store {
+  grid-area: store;
+}
+
+footer > .footer {
+  grid-area: footer;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  background-color: #e0e0e0;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+footer ul li {
+  padding: 10px 0 5px 0;
+}
+
+footer > #information {
+  grid-area: information;
+}
+footer > #account {
+  grid-area: account;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+footer a:hover {
+  color: #007948;
+}
+
+footer .logo h1 span {
+  color: rgb(20, 188, 121);
+}
+
+footer .item-links {
+  display: block;
+}
+
+/* ------------------------------------------------------------------------------------- */

@@ -1,0 +1,121 @@
+.my-purchases-heading {
+    margin: 60px;
+    box-shadow: 0 0 10px 10px #cccccc;
+    background-image: url(../images/home/bb38.jpg);
+    background-size: cover;
+    background-position: right center;
+  }
+  
+  .my-purchases-heading h1 {
+    padding: 30px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    user-select: none;
+  }
+  
+  .my-purchases-body {
+    margin: 60px;
+  }
+  
+  .my-purchases-body .my-purchases-table {
+    box-shadow: 0 0 10px 10px #cccccc;
+    padding: 30px;
+  }
+  
+  .my-purchases-body .my-purchases-table table,
+  .my-purchases-body .my-purchases-table table th,
+  .my-purchases-body .my-purchases-table table td {
+    border: solid 2px white;
+  }
+  
+  .my-purchases-body .my-purchases-table table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .my-purchases-body .my-purchases-table table tbody tr td:first-of-type,
+  .my-purchases-body .my-purchases-table table tbody tr td .action-btn-row {
+    text-align: center;
+  }
+  
+  .my-purchases-body .my-purchases-table table th {
+    background-color: #14bc79;
+    height: 3em;
+  }
+  
+  .my-purchases-body .my-purchases-table table td {
+    background-color: #f5f5f5;
+    height: 3em;
+    text-align: center;
+  }
+  
+  .my-purchases-body .my-purchases-table table tbody tr {
+    margin: 10px;
+  }
+  
+  .my-purchases-body .my-purchases-table table .action-btn-row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .my-purchases-body .my-purchases-table table .action-btn-row form {
+    margin: 0;
+  }
+  
+  .my-purchases-body .my-purchases-table table tbody tr td .action-btn-row input,
+  .my-purchases-body .my-purchases-table table tbody tr td .action-btn-row button {
+    padding: 10px;
+    border: none;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  
+  .my-purchases-body .my-purchases-table table .action-btn-row button.delete {
+    user-select: none;
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .my-purchases-body .my-purchases-table table .action-btn-row button.delete:hover {
+    background-color: #e01a2d;
+    box-shadow: 0 0 10px 4px #cccccc;
+    cursor: pointer;
+  }
+  
+  .my-purchases-body .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .my-purchases-body .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #007445;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    left: 50%;
+    margin-left: -100px;
+  }
+  
+  
+  .my-purchases-body .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+  .my-purchases-body .tooltip:hover img {
+    visibility: visible;
+  }
+  .my-purchases-body .my-purchases-table table tbody .list-btn{
+    border-bottom: 1px dotted black;
+    display: inline-block;
+  }
+  .my-purchases-body .my-purchases-table table tbody .list-btn:hover{
+    cursor: pointer;
+  }
