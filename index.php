@@ -53,6 +53,7 @@ if (isset($_SESSION['uid'])) {
             <p class="banner-desc">Stay Home &amp; Keep Shopping</p>
          </div>
       </div>
+      <progress id="banner-progress" value="40" max="100"></progress>
       <div class="item-categories">
          <div id="item1"><a href="items.php?s=women">
                <div class="category cat-high" id="cat1">
