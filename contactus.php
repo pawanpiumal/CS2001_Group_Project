@@ -53,7 +53,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['message'])) {
 </head>
 
 <body>
-    <?php require('header.php') ?>
+    <?php
+    $pageName = "contact";
+    require('header.php');
+    ?>
     <?php require('nav.php') ?>
     <div class="contact-us-heading">
         <h1>Contact Us</h1>

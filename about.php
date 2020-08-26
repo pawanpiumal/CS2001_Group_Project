@@ -10,7 +10,10 @@
 </head>
 
 <body>
-    <?php require('header.php') ?>
+    <?php
+    $pageName = "about";
+    require('header.php');
+    ?>
     <?php require('nav.php') ?>
     <div class="about-us-heading">
         <h1>About Us</h1>

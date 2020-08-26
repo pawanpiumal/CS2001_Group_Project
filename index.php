@@ -32,7 +32,10 @@ if (isset($_SESSION['uid'])) {
 </head>
 
 <body>
-   <?php require("header.php") ?>
+   <?php 
+   $pageName = "index";
+   require("header.php"); 
+   ?>
    <?php require("nav.php") ?>
    <?php
    if (isset($emptyMsg)) {

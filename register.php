@@ -88,7 +88,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body>
-    <?php require("header.php") ?>
+    <?php
+    $pageName = "register";
+    require("header.php");
+    ?>
     <?php require("nav.php") ?>
     <div class="login-body">
         <div class="login">
