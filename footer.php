@@ -25,10 +25,10 @@
         <h2>Information</h2>
         <ul>
             <li>
-                <a href="contactus.html">Contact Us</a>
+                <a href="contactus.php">Contact Us</a>
             </li>
             <li>
-                <a href="about.html">About Us</a>
+                <a href="about.php">About Us</a>
             </li>
         </ul>
     </div>
