@@ -7,10 +7,6 @@ if (!isset($_SESSION['userType']) || !isset($_SESSION['uid'])) {
     header("Location:login.php");
     exit();
 }
-if ($_SESSION['userType'] == 'user') {
-    header("Location:404.php");
-    exit();
-}
 $uid = $_SESSION['uid'];
 // Get items
 require 'config/config.php';

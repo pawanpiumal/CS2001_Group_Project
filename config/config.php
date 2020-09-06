@@ -10,7 +10,6 @@ $servername = "fashionclubsql.mysql.database.azure.com";
 	$DBpassword = "gpagroup@123";
 	$dbName = "Fashion_Club";
 
-
 	$conn = new mysqli($servername, $DBusername, $DBpassword);
 	if ($conn->connect_error) {
 		die("Connection failed: " . $conn->connect_error);
